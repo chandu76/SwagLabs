@@ -28,30 +28,6 @@ public class Products_page extends BasePage {
 	WebElement backpack_Addtocart ;
 
 
-	@FindBy(xpath="")
-	WebElement ;
-	@FindBy(xpath="")
-	WebElement ;
-	@FindBy(xpath="")
-	WebElement ;
-	@FindBy(xpath="")
-	WebElement ;
-	@FindBy(xpath="")
-	WebElement ;
-	@FindBy(xpath="")
-	WebElement ;
-	@FindBy(xpath="")
-	WebElement ;
-	@FindBy(xpath="")
-	WebElement ;
-	@FindBy(xpath="")
-	WebElement ;
-	@FindBy(xpath="")
-	WebElement ;
-	@FindBy(xpath="")
-	WebElement ;
-	@FindBy(xpath="")
-	WebElement ;
 
 
 
@@ -67,8 +43,40 @@ public class Products_page extends BasePage {
 		{
 			return(e.getMessage());
 		}
-
-
 	}
 
+
+	public boolean verify_imgDisplayed()
+	{
+		return Back_pack_Imagelink.isDisplayed();
+		
+	}
+	public void verify_ImgLinkdisplayed()
+	{
+		Back_pack_Imagelink.isDisplayed();
+	}
+	public void verify_imglink_click()
+	{
+		Back_pack_Imagelink.click();
+	}
+	public void verify_backpackLink()
+	{
+		Back_pack_Titlelink.isDisplayed();
+	}
+	public void verify_Backpack_text()
+	{
+		Back_pack_text.getText();
+	}
+	public void verify_backpack_price()
+	{
+		Backpack_price.getText();
+	}
+	public void verify_verify_AddtocartEnabled()
+	{
+		backpack_Addtocart.isEnabled();
+	}
+	public void verify_verify_Addtocartlink()
+	{
+		backpack_Addtocart.click();
+	}
 }

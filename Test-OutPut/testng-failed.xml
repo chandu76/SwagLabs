@@ -10,6 +10,13 @@
           <include name="TestHomePage"/>
         </methods>
       </class> <!-- TestCases.TC_001_validating_ProductsPage_Functionality -->
+      <class name="TestCases.TC_002_Validating_LoginFunctionality">
+        <methods>
+          <include name="teardown"/>
+          <include name="setup"/>
+          <include name="TestLogin"/>
+        </methods>
+      </class> <!-- TestCases.TC_002_Validating_LoginFunctionality -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -1,8 +1,13 @@
 package PageObjects;
 
+import org.apache.logging.log4j.core.util.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Wait;
+
+import TestBase.BaseTest;
 
 public class Products_page extends BasePage {
 
@@ -33,15 +38,17 @@ public class Products_page extends BasePage {
 
 
 	//Actions
-	public String Verify_Title()
+	public Boolean Verify_Title()
 	{
 		try 
 		{
-			return(Element_Title.getText());
+			BaseTest.wait.until(ExpectedConditions.visibilityOf(Element_Title));
+			return Element_Title.isDisplayed();
+
 		}
 		catch(Exception e)
 		{
-			return(e.getMessage());
+			return null;
 		}
 	}
 

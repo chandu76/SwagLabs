@@ -58,9 +58,9 @@ public class Products_page extends BasePage {
 		return Back_pack_Imagelink.isDisplayed();
 		
 	}
-	public void verify_ImgLinkdisplayed()
+	public boolean verify_ImgLinkdisplayed()
 	{
-		Back_pack_Imagelink.isDisplayed();
+		return Back_pack_Imagelink.isDisplayed();
 	}
 	public void verify_imglink_click()
 	{

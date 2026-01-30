@@ -29,11 +29,41 @@ public class TC_001_validating_ProductsPage_Functionality extends BaseTest
 			Assert.fail("test fail");
 		}
 	}
+
 	@Test
-	public void backpack_isDisplayed()
+	public void Test_backpack_isDisplayed()
 	{
-		Assert.assertTrue(true);
+		try
+		{
+			Assert.assertTrue(pp.verify_imgDisplayed());
+		}
+		catch(Exception e)
+		{
+			Assert.fail(e.getMessage());
+		}
+
+	}
+	@Test
+	public void Test_Backpack_imglink()
+	{
+		try
+		{
+			Assert.assertTrue(pp.verify_ImgLinkdisplayed());
+		}
+		catch(Exception e)
+		{
+			Assert.fail(e.getMessage());
+		}
+	}
+	@Test
+	public void Test_imageLink()
+	{
+		pp.verify_imglink_click();
+		if()
+		{
+			
+		}
+		
 	}
 
-	
 }
